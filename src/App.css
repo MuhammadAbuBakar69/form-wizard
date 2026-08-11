@@ -1,0 +1,275 @@
+/* Form Wizard Styles */
+
+.fw-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1f2937;
+}
+
+.fw-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.fw-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.fw-header h1 {
+  font-size: 1.75rem;
+  margin: 0 0 6px 0;
+  color: #111827;
+}
+
+.fw-header p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Progress Stepper */
+.fw-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.fw-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.fw-step-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #e5e7eb;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.fw-step-item.active .fw-step-circle {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+}
+
+.fw-step-item.completed .fw-step-circle {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.fw-step-label {
+  font-size: 0.8rem;
+  margin-top: 6px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.fw-step-item.active .fw-step-label {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.fw-line {
+  flex: 1;
+  height: 3px;
+  background: #e5e7eb;
+  margin: 0 8px;
+  margin-bottom: 20px;
+}
+
+/* Form Content */
+.fw-step-content h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.fw-subtitle {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.fw-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.fw-field label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.fw-field input,
+.fw-field textarea {
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fw-field input:focus,
+.fw-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.fw-field input.error-input {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.fw-error {
+  color: #ef4444;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.fw-row {
+  display: flex;
+  gap: 16px;
+}
+
+.fw-row .fw-field {
+  flex: 1;
+}
+
+/* Review Section */
+.fw-review-section {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.fw-review-group {
+  margin-bottom: 16px;
+}
+
+.fw-review-group:last-child {
+  margin-bottom: 0;
+}
+
+.fw-review-group h3 {
+  font-size: 0.95rem;
+  color: #2563eb;
+  margin: 0 0 8px 0;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 4px;
+}
+
+.fw-review-item {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin-bottom: 4px;
+}
+
+/* Actions */
+.fw-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.btn-primary, .btn-secondary, .btn-submit {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  margin-left: auto;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+}
+
+.btn-submit {
+  background-color: #10b981;
+  color: white;
+  margin-left: auto;
+}
+
+.btn-submit:hover {
+  background-color: #059669;
+}
+
+/* Success View */
+.fw-success {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.success-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.fw-success h2 {
+  color: #059669;
+  margin-bottom: 8px;
+}
+
+.fw-summary-box {
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0 28px 0;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #065f46;
+}
+
+.fw-summary-box p {
+  margin: 6px 0;
+}
